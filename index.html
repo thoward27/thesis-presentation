@@ -13,6 +13,7 @@
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous"> -->
 </head>
 <style>
 	section {
@@ -31,63 +32,197 @@
 	.text-right {
 		text-align: right;
 	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	.text-left {
+		text-align: left;
+	}
 </style>
 
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section style="text-align: center;">
-				Using a Digital Application to Refresh Knowledge of Abuse for
-				Individuals with Intellectual/Developmental Disabilities
+			<section class="text-center">
+				<div class="r-stretch"></div>
+				<h1 style="font-size: 2em;">
+					Using a Digital Application to <br>
+					Refresh Knowledge of Abuse for <br>
+					Individuals with Intellectual/Developmental Disabilities
+				</h1>
+				<div class="r-stretch">
+				</div>
+				<p class="text-right">
+					Thomas Howard <br>
+					University of Rhode Island <br>
+					Krishna Venkatasubramanian
+				</p>
+				<aside class="notes">
+					<ul>
+						<li>Say hello</li>
+						<li>Thank committee members</li>
+						<li>Read title</li>
+					</ul>
+				</aside>
 			</section>
-
+			<section>
+				<h2>Table of Contents</h2>
+				<div>
+					<ol>
+						<li>Introduction</li>
+						<li class="fragment">Study 1: Collaborative Design</li>
+						<li class="fragment">Study 2: Usability Evaluations</li>
+						<li class="fragment">Discussion</li>
+						<li class="fragment">Conclusions & Future Works</li>
+					</ol>
+				</div>
+				<aside class="notes">
+					<ul>
+						<li>Intro: We'll set the stage, discuss the problem at hand and the proposed solution</li>
+						<li>Study 1: We'll use collaborative design to evaluate if this work is viable and in what
+							direction it should proceed</li>
+						<li>Study 2: We'll look at how the proposed solution works for real users</li>
+						<li>Discussion: We'll talk about the results from both studies when viewed together and their
+							limitations</li>
+						<li>Conclusion: We'll summarize everything at a high level and broach future directions for
+							research</li>
+					</ul>
+				</aside>
+			</section>
 
 			<section>
 				<section>
 					<h2>Introduction</h2>
 				</section>
+				<section>
+					<h3>Overview</h3>
+					<div>
+						<ol>
+							<li>The Problem: Abuse</li>
+							<li class="fragment">Proposed Solution: Education</li>
+							<li class="fragment">Key Questions</li>
+						</ol>
+					</div>
+					<aside class="notes">
+						More specifically, within this section I will elaborate on
+						<ul>
+							<li>the problem we face, the case of rampant abuse in a vulnerable community.</li>
+							<li>propose education as a solution to this problem.</li>
+							<li>establish several key questions that guided this research</li>
+						</ul>
+					</aside>
+				</section>
 				<section data-auto-animate>
 					<h3>Abuse is a Problem</h3>
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Abuse is a Problem</h3>
-					<div class="r-stretch">
-						<ul class="">
-							<li>9/10 abused at least once</li>
-							<li class="fragment">50% experience 10+ instances</li>
-							<li class="fragment">More likely to experience violence</li>
-							<li class="fragment">Often abused by known persons</li>
-							<li class="fragment">Abuse is severely under reported</li>
-						</ul>
+					<div class="flex r-stretch">
+						<div class="col">
+							<p>
+								Regarding individuals with I/DD
+							</p>
+							<ul>
+								<li>9/10 abused at least once</li>
+								<li class="fragment">50% experience 10+ instances</li>
+								<li class="fragment">Often abused by known persons</li>
+								<li class="fragment">Abuse is severely under reported</li>
+							</ul>
+						</div>
+						<div class="col">
+							<canvas id="intro:abuse:pie" height=800 width=700></canvas>
+						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>Valenti & Hein, sexual 1995</li>
+							<li>Venkatasubramanian, 2021</li>
+							<li>Known persons: care takers, family, friends</li>
+							<li>Under Reported: For example, Valenti & Hein found that only 3% of sexual abuse cases
+								involving individuals with I/DD are ever reported</li>
+							<li>Faced with such a problem, what can we do?</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<h3>Education as a Solution</h3>
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Education as a Solution</h3>
-					<div class="r-stretch">
-						<ul>
-							<li>Abuse prevention training is effective</li>
-							<li class="fragment">Shown to increase confidence</li>
-							<li class="fragment">Frequency is important to continued understanding</li>
-							<li class="fragment">Logistics of attending in-person training</li>
-						</ul>
+					<div class="flex r-stretch">
+						<div class="col">
+							<img data-src="assets/etc/man-wall-books.jpg" alt="Man peeking over wall with books">
+						</div>
+						<div class="col">
+							<ul>
+								<li>Abuse prevention training is effective</li>
+								<li class="fragment">Shown to increase confidence</li>
+								<li class="fragment">Current solution: In person training</li>
+								<li class="fragment">Logistics of attending in-person training</li>
+								<li class="fragment">Frequency is important to continued understanding</li>
+							</ul>
+						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>Abuse prevention training has been shown to be effective in Krishna's work</li>
+							<li>Current solution: Awareness and Action in-person training events</li>
+							<li>In person trainings can be hard logistically to attend</li>
+							<li>Persons with I/DD may need help with transportation</li>
+							<li>Frequency has been shown to be very important in retaining information (Ayres, Buehler)
+							</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<h3>Digitizing the A&A training</h3>
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Digitizing the A&A training</h3>
-					<div class="r-stretch">
-						<ul>
-							<li>Autonomous learning</li>
-							<li class="fragment">Refreshing knowledge vs teaching</li>
-							<li class="fragment">Intrinsic Motivation</li>
-							<li class="fragment">Emotionally Difficult Material</li>
-						</ul>
+					<div class="flex r-stretch">
+						<div class="col">
+							<ul>
+								<li>Autonomous learning</li>
+								<li class="fragment">Refreshing knowledge vs teaching</li>
+								<li class="fragment">Emotionally Difficult Material</li>
+								<li class="fragment">Intrinsic Motivation</li>
+							</ul>
+						</div>
+						<div class="col fragment">
+							<img data-src="assets/screenshots/01-welcome.png"
+								alt="Welcome screenshot from final application">
+						</div>
 					</div>
+					<aside class="notes">
+						Digitizing the training requires we circumnavigate a few crucial issues.
+						<ul>
+							<li>Can we design something someone can use autonomously?</li>
+							<li>If individuals need help and the abuser is their caretaker, they won't receive it.</li>
+							<li>What does it mean to refresh compared to teaching?</li>
+							<li>Teaching means the user may have never seen the material, whilst refreshing assumes
+								they've been exposed already</li>
+							<li>How can we get individuals to return to the application enough to properly maintain
+								their knowledge?</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h3>Key Questions</h3>
+					<ul>
+						<li>
+							What aspects of interactive content inspired by ideas of gamification work for the refresher
+							application?
+						</li>
+						<li>
+							How are grounding activities built into the application received by the audience?
+						</li>
+						<li>
+							Can an application effectively refresh an individual's knowledge from the Awareness
+							and Action training?
+						</li>
+					</ul>
 				</section>
 			</section>
 
@@ -450,34 +585,36 @@
 						</ul>
 					</div>
 				</section>
-			</section>
-			<section data-auto-animate>
-				<h3>Results: Grounding Activities</h3>
-			</section>
-			<section data-auto-animate data-visibility="uncounted">
-				<h3>Results: Grounding Activities</h3>
-				<div class="r-stretch">
-					<ul>
-						<li>Extremely important</li>
-						<li class="fragment">Xylophone as an option</li>
-					</ul>
-				</div>
-			</section>
-			<section data-auto-animate>
-				<h3>Results: Effectiveness</h3>
-			</section>
-			<section data-auto-animate data-visibility="uncounted">
-				<h3>Results: Effectiveness</h3>
-				<div class="r-stretch">
-					<ul>
-						<li>Recommending others use the application</li>
-						<li class="fragment">Willingness to download</li>
-					</ul>
-				</div>
+				<section data-auto-animate>
+					<h3>Results: Grounding Activities</h3>
+				</section>
+				<section data-auto-animate data-visibility="uncounted">
+					<h3>Results: Grounding Activities</h3>
+					<div class="r-stretch">
+						<ul>
+							<li>Extremely important</li>
+							<li class="fragment">Xylophone as an option</li>
+						</ul>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h3>Results: Effectiveness</h3>
+				</section>
+				<section data-auto-animate data-visibility="uncounted">
+					<h3>Results: Effectiveness</h3>
+					<div class="r-stretch">
+						<ul>
+							<li>Recommending others use the application</li>
+							<li class="fragment">Willingness to download</li>
+						</ul>
+					</div>
+				</section>
 			</section>
 
 			<section>
-				<section><h2>Discussion</h2></section>
+				<section>
+					<h2>Discussion</h2>
+				</section>
 				<section data-auto-animate>
 					<h3>Recommendations for Future Applications</h3>
 				</section>
@@ -518,7 +655,9 @@
 
 
 			<section>
-				<section><h2>Future Work</h2></section>
+				<section>
+					<h2>Future Work</h2>
+				</section>
 				<section data-auto-animate>
 					<h3>Large Scale Evaluations</h3>
 				</section>
@@ -541,14 +680,30 @@
 	<script src="plugin/highlight/highlight.js"></script>
 	<script src="plugin/zoom/zoom.js"></script>
 	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
 			slideNumber: 'c/t',
-			// Learn about plugins: https://revealjs.com/plugins/
+			width: 960 * 1.5,
+			height: 700 * 1.5,
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+		});
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+		integrity="sha256-t9UJPrESBeG2ojKTIcFLPGF7nHi2vEc7f5A2KpH/UBU=" crossorigin="anonymous"></script>
+	<script>
+		Chart.defaults.global.defaultFontSize = 40;
+		new Chart(document.getElementById('intro:abuse:pie').getContext('2d'), {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [9, 1],
+					backgroundColor: ['rgba(240, 52, 52, 1)', 'rgba(42, 187, 155, 1)']
+				}],
+				labels: [
+					'Abused',
+					'Not Abused',
+				]
+			}
 		});
 	</script>
 </body>
