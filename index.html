@@ -21,6 +21,10 @@
 		padding: 1em 0;
 	}
 
+	blockquote {
+		padding: 0.8em !important;
+	}
+
 	.flex {
 		display: flex;
 	}
@@ -230,6 +234,12 @@
 			<section>
 				<section>
 					<h2>Collaborative Design</h2>
+					<aside class="notes">
+						Collaborative design involves incorporating the target population in the design process for the
+						application.
+						We applied this technique in this work as an initial study to gauge effectiveness of 5 distinct
+						medium-fidelity prototypes.
+					</aside>
 				</section>
 
 				<section data-auto-animate>
@@ -237,15 +247,36 @@
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Gathering Requirements</h3>
-					<div class="r-stretch">
-						<ul>
-							<li>Generating Personas</li>
-							<li class="fragment">Writing scenarios</li>
-							<li class="fragment">Producing use-cases</li>
-							<li class="fragment">Developing prototypes</li>
-						</ul>
+					<div class="flex r-stretch">
+						<div class="col r-stack">
+							<img class="fragment" src="assets/requirements/01-persona-alex.png" alt="">
+							<img class="fragment" src="assets/requirements/01-persona-dave.png" alt="">
+							<img class="fragment" src="assets/requirements/01-persona-jessica.png" alt="">
+						</div>
+						<div class="col">
+							<ul>
+								<li>Generating Personas</li>
+								<li class="fragment">Writing scenarios</li>
+								<li class="fragment">Producing use-cases</li>
+								<li class="fragment">Creating requirements</li>
+								<li class="fragment">Developing prototypes</li>
+							</ul>
+						</div>
 					</div>
+					<aside class="notes">
+						The first step to generating the required prototypes was to gather a proper set of requirements.
+						<ul>
+							<li>We generated 3 distinct personas for this work</li>
+							<li>Each persona represents a potential real user, though they are fictitious, emphasis was
+								places on lifelike details</li>
+							<li>Each persona was then used to generate scenarios, informal narrative stories</li>
+							<li>These stories were then used to identify clear use-cases for the application</li>
+							<li>From these use cases, formal requirements were created that laid the foundation for the
+								prototypes</li>
+						</ul>
+					</aside>
 				</section>
+
 
 				<section data-auto-animate>
 					<h3>Collaborative Design Session</h3>
@@ -256,10 +287,20 @@
 						<ul>
 							<li>Six co-designers</li>
 							<li class="fragment">Four self-advocates, two coordinators</li>
+							<li class="fragment">Five prototypes to be presented</li>
 							<li class="fragment">Prototype projected onto large screen</li>
 							<li class="fragment">Prototype distributed in binders</li>
 						</ul>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>The four self-advocates had helped create the A&A training.</li>
+							<li>Each prototype focused on a different core element</li>
+							<li>During the session, all participants were asked to dictate if they wanted the driver to
+								click on anything</li>
+							<li>Binders were presented and participants were asked to draw in them if they wished</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section data-auto-animate>
@@ -275,11 +316,24 @@
 						</div>
 						<div class="col">
 							<ul>
-								<li>Intrinsic motivation</li>
-								<li class="fragment">Maintaining happiness in a virtual pet</li>
+								<li>Virtual pet</li>
+								<li class="fragment">Happiness increases with training</li>
+								<li class="fragment">Happiness decays over time</li>
+								<li class="fragment">Maintaining happiness</li>
+								<li class="fragment">Intrinsic motivation</li>
 							</ul>
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>Users were provided a virtual pet</li>
+							<li>Their pet becomes happier as the user completes trainings</li>
+							<li>Happiness decays as a function of time, so if a user does not complete a training, their
+								pet becomes sad</li>
+							<li>The question here was whether this virtual pet could act as a form of emotional
+								reinforcement to engage users and motivate them to return to the application</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<div class="flex">
@@ -291,16 +345,22 @@
 						</div>
 					</div>
 					<div class="r-stretch">
-						<ul>
-							<li>Generally negative</li>
-							<li class="fragment">Taking away happiness</li>
-							<li class="fragment">Avoid negative reinforcement</li>
-							<li class="fragment">No suggestions for Money Counting</li>
-						</ul>
 						<blockquote class="fragment">
 							[the application should] never take anything away from somebody. - C5
 						</blockquote>
+						<ul>
+							<li class="fragment">Generally negative</li>
+							<li class="fragment">Taking away happiness</li>
+							<li class="fragment">Avoid negative reinforcement</li>
+						</ul>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>Overall, this prototype faired quite poorly.</li>
+							<li>Participants expressed concern over the application taking away the happiness of the pet</li>
+							<li>They stressed that rewards should increase <em>monotonically</em></li>
+						</ul>
+					</aside>
 				</section>
 
 				<section data-auto-animate>
@@ -316,11 +376,22 @@
 						</div>
 						<div class="col">
 							<ul>
-								<li>Emotionally triggering</li>
+								<li>Programmatic breaks</li>
+								<li class="fragment">Extremely difficult content</li>
+								<li class="fragment">Emotionally triggering</li>
 								<li class="fragment">First-hand experience</li>
 							</ul>
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>This prototype proposed building in programmatic breaks throughout the application</li>
+							<li>this would provide users with an opportunity to ground themselves</li>
+							<li>the content in the application can be extremely challenging for some people</li>
+							<li>and, may even risk triggering certain individuals</li>
+							<li>Especially those with first hand experience</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<div class="flex">
@@ -332,16 +403,24 @@
 						</div>
 					</div>
 					<div class="r-stretch">
+						<blockquote class="fragment">
+							it can be a little hard for people [to go through the training] - C1
+						</blockquote>
 						<ul>
 							<li>Very positive</li>
 							<li class="fragment">All participants valued this element</li>
 							<li class="fragment">Avoid mandatory fun</li>
 							<li class="fragment">Add a time limit</li>
 						</ul>
-						<blockquote class="fragment">
-							it can be a little hard for people [to go through the training] - C1
-						</blockquote>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>This prototype faired extremely well in the session</li>
+							<li>All participants agreed this element was crucial</li>
+							<li>Designers suggested that we should avoid <em>mandatory fun</em></li>
+							<li>also, add a time limit so that users don't get lost in the activity</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section data-auto-animate>
@@ -357,11 +436,22 @@
 						</div>
 						<div class="col">
 							<ul>
-								<li>Increasing interaction</li>
+								<li>Constant interaction</li>
 								<li class="fragment">Increased engagement</li>
+								<li class="fragment">Flagging abuse / not abuse</li>
 							</ul>
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>Exploring the impact of constant interaction</li>
+							<li>hopes that this would increase engagement</li>
+							<li>Modeled after the a&a training exercise involving flagging behavior</li>
+							<li>Users watch a video and mark it as abuse / not abuse</li>
+							<li>After the video, if they succesfully identified the abusive segment, they were asked what type of abuse</li>
+							<li>If they failed to select the proper segment, they were offered redemption, then brought to slides if they answered incorrectly</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<div class="flex">
@@ -373,16 +463,23 @@
 						</div>
 					</div>
 					<div class="r-stretch">
+						<blockquote class="fragment">
+							Can you see the smoke coming out of my ears yet? - C5
+						</blockquote>
 						<ul>
-							<li>Generally positive</li>
+							<li class="fragment">Generally positive</li>
 							<li class="fragment">Confusing interface</li>
 							<li class="fragment">Overly complicated</li>
 							<li class="fragment">Move to discrete clips</li>
 						</ul>
-						<blockquote class="fragment">
-							Can you see the smoke coming out of my ears yet? - C5
-						</blockquote>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>Designers generally liked this concept</li>
+							<li>Although they found it confusing and overly complicated in its current incarnation</li>
+							<li>Instead of continuously playing the video, they suggested using discrete clips and asking after each</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section data-auto-animate>
@@ -398,11 +495,20 @@
 						</div>
 						<div class="col">
 							<ul>
-								<li>Prompting users to think</li>
+								<li>Presented a traditional quiz</li>
+								<li class="fragment">Prompting users to think</li>
 								<li class="fragment">Only quizzes</li>
 							</ul>
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>This prototype explored the effectiveness of presenting a quiz to users</li>
+							<li>the goal was to get users to reflect on their knowledge</li>
+							<li>Similar to most other quiz applications, presented a multiple-choice question</li>
+							<li>This prototype explored providing <em>only</em> quizzes</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<div class="flex">
@@ -414,16 +520,25 @@
 						</div>
 					</div>
 					<div class="r-stretch">
+						<blockquote class="fragment">
+							[it] should either, you know, talk about physical abuse or show the video - C4
+						</blockquote>
 						<ul>
-							<li>Very positive</li>
+							<li class="fragment">Very positive</li>
 							<li class="fragment">Would benefit users</li>
 							<li class="fragment">Not enough on its own</li>
 							<li class="fragment">Make it optional</li>
 						</ul>
-						<blockquote class="fragmen">
-							[it] should either, you know, talk about physical abuse or show the video - C4
-						</blockquote>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>Overall this prototype was found to be effective</li>
+							<li>Designers thought it would benefit users</li>
+							<li>However, it was not enough on it's own</li>
+							<li>Designers stressed that you need to show before you ask questions</li>
+							<li>They also suggested making it optional as it was pointed out that if a user knows a quiz is coming they may feel anxious</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section data-auto-animate>
@@ -441,9 +556,22 @@
 							<ul>
 								<li>Tangential skills</li>
 								<li class="fragment">Variety of activities</li>
+								<li class="fragment">No Touch Zones: Sexual Abuse</li>
+								<li class="fragment">Money Counting: Financial Abuse</li>
+								<li class="fragment">Identifying Emotions: More General</li>
 							</ul>
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>This prototype asked a different question than the previous four</li>
+							<li>Would it be effective to just teach tangential skills?</li>
+							<li>It offered several different activities</li>
+							<li>No touch zones focused on sexual abuse by asking users to identify the no-touch zones on a human figure</li>
+							<li>Money counting asked users to make change up to a specified amount using US denominations</li>
+							<li>Identifying emotions asked users to identify emotions presented on screen</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<div class="flex">
@@ -457,11 +585,21 @@
 					<div class="r-stretch">
 						<ul>
 							<li>Generally positive</li>
+							<li class="fragment">No Touch Zones</li>
+							<li class="fragment">Money Counting</li>
 							<li class="fragment">Identifying Emotions was challenging</li>
-							<li class="fragment">No Touch Zones should offer positive reinforcement</li>
-							<li class="fragment">No suggestions for Money Counting</li>
 						</ul>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>This prototype had mixed reviews, but was generally viewed positively.</li>
+							<li>Participants believed that both no touch zones and money counting would be effective</li>
+							<li>For no touch zones, participants suggested the application offer a positive reinforcer when the user makes a correct suggestion</li>
+							<li>For money counting, no suggestions were made, participants wanted to use the activity as-is</li>
+							<li>Fortunately, designers were able to demonstrate a fatal flaw in the identifying-emotions activity</li>
+							<li>This activity was found to be extremely challenging for designers, as the angry emotion seemed to be jarring</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 
