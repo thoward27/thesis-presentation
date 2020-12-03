@@ -13,7 +13,7 @@
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous"> -->
 </head>
@@ -25,6 +25,10 @@
 
 	blockquote {
 		padding: 0.8em !important;
+	}
+
+	i {
+		font-size: 1em !important;
 	}
 
 	.flex {
@@ -45,6 +49,10 @@
 
 	.text-left {
 		text-align: left;
+	}
+
+	.mb-0 {
+		margin-bottom: 0 !important;
 	}
 </style>
 
@@ -94,7 +102,7 @@
 				<aside class="notes">
 					<ul>
 						<li>Intro: We'll set the stage, discuss the problem at hand and the proposed solution</li>
-						<li>Study 1: We'll use collaborative design to evaluate if this work is viable and in what
+						<li>We'll use collaborative design to evaluate if this work is viable and in what
 							direction it should proceed</li>
 						<li>Study 2: We'll look at how the proposed solution works for real users</li>
 						<li>Discussion: We'll talk about the results from both studies when viewed together and their
@@ -253,7 +261,8 @@
 					<aside class="notes">
 						Collaborative design involves incorporating the target population in the design process for the
 						application.
-						We applied this technique in this work as an initial study to gauge effectiveness of 5 distinct
+						We applied this technique in this work as an initial investigation to gauge effectiveness of 5
+						distinct
 						medium-fidelity prototypes.
 					</aside>
 				</section>
@@ -300,13 +309,52 @@
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Collaborative Design Session</h3>
 					<div class="r-stretch">
-						<ul>
-							<li>Six co-designers</li>
-							<li class="fragment">Four self-advocates, two coordinators</li>
-							<li class="fragment">Five prototypes to be presented</li>
-							<li class="fragment">Prototype projected onto large screen</li>
-							<li class="fragment">Prototype distributed in binders</li>
-						</ul>
+						<div class="flex">
+							<div class="col">
+								<ul>
+									<li>Six co-designers</li>
+									<li class="fragment">Four self-advocates, two coordinators</li>
+									<li class="fragment">Five prototypes to be presented</li>
+									<li class="fragment">Prototype projected and distributed</li>
+								</ul>
+							</div>
+							<div class="col">
+								<table>
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Self-Advocate</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>C1</td>
+											<td><i class="material-icons">check</i></td>
+										</tr>
+										<tr>
+											<td>C2</td>
+											<td><i class="material-icons">check</i></td>
+										</tr>
+										<tr>
+											<td>C3</td>
+											<td><i class="material-icons">check</i></td>
+										</tr>
+										<tr>
+											<td>C4</td>
+											<td><i class="material-icons">check</i></td>
+										</tr>
+										<tr>
+											<td>C5</td>
+											<td><i class="material-icons">close</i></td>
+										</tr>
+										<tr>
+											<td>C6</td>
+											<td><i class="material-icons">close</i></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 					</div>
 					<aside class="notes">
 						<ul>
@@ -319,85 +367,97 @@
 					</aside>
 				</section>
 				<section data-auto-animate>
-					<h3>The Prototypes</h3>
+					<h3>Low-Fidelity Prototypes</h3>
 				</section>
 				<section data-auto-animate>
-					<h3>The Prototypes</h3>
+					<h3>Low-Fidelity Prototypes</h3>
 					<div class="flex">
 						<div class="col">
-							<img class="" src="assets/html/fg01-video.png" alt="">
-							Interactive Elements
+							<img class="mb-0" src="assets/html/vp06-happy.png" alt="">
+							<span class="fragment fade-in-then-semi-out">
+								Emotional Reinforcement
+							</span>
 						</div>
 						<div class="col">
-							<img src="assets/html/gg04-boxes.png" alt="">
-							Grounding Activities
+							<img class="mb-0" src="assets/html/gg04-boxes.png" alt="">
+							<span class="fragment fade-in-then-semi-out">
+								Grounding Activities
+							</span>
 						</div>
 						<div class="col">
-							<img src="assets/html/qz03-kissing.png" alt="">
-
+							<img class="mb-0" src="assets/html/qz03-kissing.png" alt="">
+							<span class="fragment fade-in-then-semi-out">
+								Quizzes
+							</span>
 						</div>
 					</div>
 					<div class="flex">
 						<div class="col"></div>
 						<div class="col" style="flex: 2;">
-							<img src="assets/html/vp06-happy.png" alt="">
+							<img class="mb-0" src="assets/html/fg01-video.png" alt="">
+							<span class="fragment fade-in-then-semi-out">
+								Interactive Elements
+							</span>
 						</div>
 						<div class="col" style="flex: 2;">
-							<img src="assets/html/ss03-money.png" alt="">
+							<img class="mb-0" src="assets/html/ss03-money.png" alt="">
+							<span class="fragment fade-in-then-semi-out">
+								Skills Activities
+							</span>
 						</div>
 						<div class="col"></div>
-					</div>
-				</section>
-				<section data-auto-animate>
-					<h3>Emotional Reinforcement</h3>
-				</section>
-				<section data-auto-animate data-visibility="uncounted">
-					<h3>Emotional Reinforcement</h3>
-					<div class="r-stretch flex">
-						<div class="col">
-							<video loop controls>
-								<source data-src="assets/html/vp.mp4" type="video/mp4">
-							</video>
-						</div>
-						<div class="col">
-							<ul>
-								<li>Virtual pet</li>
-								<li class="fragment">Happiness increases with training</li>
-								<li class="fragment">Happiness decays over time</li>
-								<li class="fragment">Maintaining happiness</li>
-								<li class="fragment">Intrinsic motivation</li>
-							</ul>
-						</div>
 					</div>
 					<aside class="notes">
+						Made with HTML + JS
 						<ul>
-							<li>Users were provided a virtual pet</li>
-							<li>Their pet becomes happier as the user completes trainings</li>
-							<li>Happiness decays as a function of time, so if a user does not complete a training, their
-								pet becomes sad</li>
-							<li>The question here was whether this virtual pet could act as a form of emotional
-								reinforcement to engage users and motivate them to return to the application</li>
+							<li>Emotional Reinforcement</li>
+							<ul>
+								<li>Provided a pet</li>
+								<li>Happiness increases with training / decays over time</li>
+								<li>Would that be enough to generate intrinsic motivation?</li>
+							</ul>
+							<li>Grounding Activities</li>
+							<ul>
+								<li>Programmatic breaks so users can ground themselves</li>
+								<li>Content is difficult can be triggering</li>
+								<li>First-hand experience</li>
+							</ul>
+							<li>Interactive Elements</li>
+							<ul>
+								<li>Constant interaction, increase engagement?</li>
+								<li>Modeled after A&A exercise</li>
+								<li>Watch video, mark as abuse/not, answer questions, redemption</li>
+							</ul>
+							<li>Quizzes</li>
+							<ul>
+								<li>Traditional Quiz, prompt users to think</li>
+								<li>Only quizzes with multiple choice questions</li>
+							</ul>
+							<li>Skills Activities</li>
+							<ul>
+								<li>Tangential Skills, no touch, money counting, identifying emotions</li>
+							</ul>
 						</ul>
 					</aside>
 				</section>
-				<section data-auto-animate>
-					<div class="flex">
-						<div class="col">
-							<h3>Results</h3>
-						</div>
-						<div class="col">
-							<h3>Emotional Reinforcement</h3>
-						</div>
-					</div>
+				<section>
+					<h3>Feedback: Emotional Reinforcement</h3>
 					<div class="r-stretch">
 						<blockquote class="fragment">
-							[the application should] never take anything away from somebody. - C5
+							"[the application should] never take anything away from somebody." - C5
 						</blockquote>
-						<ul>
-							<li class="fragment">Generally negative</li>
-							<li class="fragment">Taking away happiness</li>
-							<li class="fragment">Avoid negative reinforcement</li>
-						</ul>
+						<div class="flex">
+							<div class="col">
+								<img src="assets/html/vp06-happy.png" alt="">
+							</div>
+							<div class="col">
+								<ul>
+									<li class="fragment">Generally negative</li>
+									<li class="fragment">Taking away happiness</li>
+									<li class="fragment">Avoid negative reinforcement</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 					<aside class="notes">
 						<ul>
@@ -408,56 +468,26 @@
 						</ul>
 					</aside>
 				</section>
-
-				<section data-auto-animate>
-					<h3>Grounding Activities</h3>
-				</section>
-				<section data-auto-animate data-visibility="uncounted">
-					<h3>Grounding Activities</h3>
-					<div class="r-stretch flex">
-						<div class="col">
-							<video loop controls>
-								<source data-src="assets/html/gg.mp4" type="video/mp4">
-							</video>
-						</div>
-						<div class="col">
-							<ul>
-								<li>Programmatic breaks</li>
-								<li class="fragment">Extremely difficult content</li>
-								<li class="fragment">Emotionally triggering</li>
-								<li class="fragment">First-hand experience</li>
-							</ul>
-						</div>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li>This prototype proposed building in programmatic breaks throughout the application</li>
-							<li>this would provide users with an opportunity to ground themselves</li>
-							<li>the content in the application can be extremely challenging for some people</li>
-							<li>and, may even risk triggering certain individuals</li>
-							<li>Especially those with first hand experience</li>
-						</ul>
-					</aside>
-				</section>
-				<section data-auto-animate>
-					<div class="flex">
-						<div class="col">
-							<h3>Results</h3>
-						</div>
-						<div class="col">
-							<h3>Grounding Activities</h3>
-						</div>
-					</div>
+				<section>
+					<h3>Feedback: Grounding Activities</h3>
 					<div class="r-stretch">
 						<blockquote class="fragment">
-							it can be a little hard for people [to go through the training] - C1
+							"it can be a little hard for people [to go through the training]" - C1
 						</blockquote>
-						<ul>
-							<li>Very positive</li>
-							<li class="fragment">All participants valued this element</li>
-							<li class="fragment">Avoid mandatory fun</li>
-							<li class="fragment">Add a time limit</li>
-						</ul>
+						<div class="flex">
+							<div class="col">
+								<ul>
+									<li>Very positive</li>
+									<li class="fragment">All participants valued this element</li>
+									<li class="fragment">Avoid mandatory fun</li>
+									<li class="fragment">Add a time limit</li>
+								</ul>
+							</div>
+							<div class="col">
+								<!-- TODO: Change all src to data-src -->
+								<img src="assets/html/gg04-boxes.png" alt="">
+							</div>
+						</div>
 					</div>
 					<aside class="notes">
 						<ul>
@@ -468,58 +498,25 @@
 						</ul>
 					</aside>
 				</section>
-
 				<section data-auto-animate>
-					<h3>Interactive Elements</h3>
-				</section>
-				<section data-auto-animate data-visibility="uncounted">
-					<h3>Interactive Elements</h3>
-					<div class="r-stretch flex">
-						<div class="col">
-							<video loop controls>
-								<source data-src="assets/html/fg.mp4" type="video/mp4">
-							</video>
-						</div>
-						<div class="col">
-							<ul>
-								<li>Constant interaction</li>
-								<li class="fragment">Increased engagement</li>
-								<li class="fragment">Flagging abuse / not abuse</li>
-							</ul>
-						</div>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li>Exploring the impact of constant interaction</li>
-							<li>hopes that this would increase engagement</li>
-							<li>Modeled after the a&a training exercise involving flagging behavior</li>
-							<li>Users watch a video and mark it as abuse / not abuse</li>
-							<li>After the video, if they succesfully identified the abusive segment, they were asked
-								what type of abuse</li>
-							<li>If they failed to select the proper segment, they were offered redemption, then brought
-								to slides if they answered incorrectly</li>
-						</ul>
-					</aside>
-				</section>
-				<section data-auto-animate>
-					<div class="flex">
-						<div class="col">
-							<h3>Results</h3>
-						</div>
-						<div class="col">
-							<h3>Interactive Elements</h3>
-						</div>
-					</div>
+					<h3>Feedback: Interactive Elements</h3>
 					<div class="r-stretch">
 						<blockquote class="fragment">
-							Can you see the smoke coming out of my ears yet? - C5
+							"Can you see the smoke coming out of my ears yet?" - C5
 						</blockquote>
-						<ul>
-							<li class="fragment">Generally positive</li>
-							<li class="fragment">Confusing interface</li>
-							<li class="fragment">Overly complicated</li>
-							<li class="fragment">Move to discrete clips</li>
-						</ul>
+						<div class="flex">
+							<div class="col">
+								<img src="assets/html/fg02-video.png" alt="">
+							</div>
+							<div class="col">
+								<ul>
+									<li class="fragment">Generally positive</li>
+									<li class="fragment">Confusing interface</li>
+									<li class="fragment">Overly complicated</li>
+									<li class="fragment">Move to discrete clips</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 					<aside class="notes">
 						<ul>
@@ -530,54 +527,26 @@
 						</ul>
 					</aside>
 				</section>
-
+				<!-- TODO: Remove data-auto-animate where applicable. -->
 				<section data-auto-animate>
-					<h3>Quizzes</h3>
-				</section>
-				<section data-auto-animate data-visibility="uncounted">
-					<h3>Quizzes</h3>
-					<div class="r-stretch flex">
-						<div class="col">
-							<video loop controls>
-								<source data-src="assets/html/qz.mp4" type="video/mp4">
-							</video>
-						</div>
-						<div class="col">
-							<ul>
-								<li>Presented a traditional quiz</li>
-								<li class="fragment">Prompting users to think</li>
-								<li class="fragment">Only quizzes</li>
-							</ul>
-						</div>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li>This prototype explored the effectiveness of presenting a quiz to users</li>
-							<li>the goal was to get users to reflect on their knowledge</li>
-							<li>Similar to most other quiz applications, presented a multiple-choice question</li>
-							<li>This prototype explored providing <em>only</em> quizzes</li>
-						</ul>
-					</aside>
-				</section>
-				<section data-auto-animate>
-					<div class="flex">
-						<div class="col">
-							<h3>Results</h3>
-						</div>
-						<div class="col">
-							<h3>Quizzes</h3>
-						</div>
-					</div>
+					<h3>Feedback: Quizzes</h3>
 					<div class="r-stretch">
 						<blockquote class="fragment">
-							[it] should either, you know, talk about physical abuse or show the video - C4
+							"[it] should either, you know, talk about physical abuse or show the video" - C4
 						</blockquote>
-						<ul>
-							<li class="fragment">Very positive</li>
-							<li class="fragment">Would benefit users</li>
-							<li class="fragment">Not enough on its own</li>
-							<li class="fragment">Make it optional</li>
-						</ul>
+						<div class="flex">
+							<div class="col">
+								<ul>
+									<li class="fragment">Very positive</li>
+									<li class="fragment">Would benefit users</li>
+									<li class="fragment">Not enough on its own</li>
+									<li class="fragment">Make it optional</li>
+								</ul>
+							</div>
+							<div class="col">
+								<img src="assets/html/qz02-kicking.png" alt="">
+							</div>
+						</div>
 					</div>
 					<aside class="notes">
 						<ul>
@@ -590,57 +559,25 @@
 						</ul>
 					</aside>
 				</section>
-
-				<section data-auto-animate>
-					<h3>Skills Activities</h3>
-				</section>
-				<section data-auto-animate data-visibility="uncounted">
-					<h3>Skills Activities</h3>
-					<div class="r-stretch flex">
-						<div class="col">
-							<video loop controls>
-								<source data-src="assets/html/ss.mp4" type="video/mp4">
-							</video>
-						</div>
-						<div class="col">
-							<ul>
-								<li>Tangential skills</li>
-								<li class="fragment">Variety of activities</li>
-								<li class="fragment">No Touch Zones: Sexual Abuse</li>
-								<li class="fragment">Money Counting: Financial Abuse</li>
-								<li class="fragment">Identifying Emotions: More General</li>
-							</ul>
-						</div>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li>This prototype asked a different question than the previous four</li>
-							<li>Would it be effective to just teach tangential skills?</li>
-							<li>It offered several different activities</li>
-							<li>No touch zones focused on sexual abuse by asking users to identify the no-touch zones on
-								a human figure</li>
-							<li>Money counting asked users to make change up to a specified amount using US
-								denominations</li>
-							<li>Identifying emotions asked users to identify emotions presented on screen</li>
-						</ul>
-					</aside>
-				</section>
-				<section data-auto-animate>
-					<div class="flex">
-						<div class="col">
-							<h3>Results</h3>
-						</div>
-						<div class="col">
-							<h3>Skills Activities</h3>
-						</div>
-					</div>
+				<section>
+					<h3>Feedback: Skills Activities</h3>
 					<div class="r-stretch">
-						<ul>
-							<li>Generally positive</li>
-							<li class="fragment">No Touch Zones</li>
-							<li class="fragment">Money Counting</li>
-							<li class="fragment">Identifying Emotions was challenging</li>
-						</ul>
+						<blockquote class="fragment">
+							"TODO" - C
+						</blockquote>
+						<div class="flex">
+							<div class="col">
+								<img src="assets/html/ss03-money.png" alt="">
+							</div>
+							<div class="col">
+								<ul>
+									<li>Generally positive</li>
+									<li class="fragment">No Touch Zones</li>
+									<li class="fragment">Money Counting</li>
+									<li class="fragment">Identifying Emotions was challenging</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 					<aside class="notes">
 						<ul>
@@ -659,28 +596,39 @@
 					</aside>
 				</section>
 				<section>
-					<h3>The resulting prototypes</h3>
-					<div class="flex r-stretch">
+					<h3>Medium-Fidelity Prototypes</h3>
+					<div class="flex">
 						<div class="col">
-							<img class="fragment" src="assets/screenshots/a/08-quiz.png" alt="">
+							<img class="mb-0 fragment" src="assets/screenshots/a/02-slide.png" alt="">
+							Version A
 						</div>
 						<div class="col">
-							<img class="fragment" src="assets/screenshots/b/04-video-clip1-no-abuse.png" alt="">
+							<img class="mb-0 fragment" src="assets/screenshots/b/04-video-clip1-no-abuse.png" alt="">
+							Verson B
 						</div>
 						<div class="col">
-							<img class="fragment" src="assets/screenshots/c/06-skills-01.png" alt="">
+							<img class="mb-0 fragment" src="assets/screenshots/c/06-skills-01.png" alt="">
+							Version C
+						</div>
+						<div class="col">
+							<img src="assets/screenshots/05-music.png" alt="Xylophone game" class="mb-0 fragment">
+							Grounding Activity
+						</div>
+						<div class="col">
+							<img src="assets/screenshots/07-reward.png" alt="Acknowledgement" class="mb-0 fragment">
+							Reward
 						</div>
 					</div>
 					<aside class="notes">
 						<ul>
-							<li>After concluding the collaborative design session</li>
-							<li>We had a lot of great feedback</li>
-							<li>This feedback was used to pair down our prototypes and create 3 new medium-fidelity
-								versions</li>
-							<li>These versions all combined informal and quizzing elements</li>
-							<li>Version A focused providing a simple quiz</li>
-							<li>Version B used discrete video clips</li>
-							<li>Version C used the no-touch zone skills game</li>
+							<li>Incorporated feedback from designers</li>
+							<li>Created Medium fidelity</li>
+							<li>Written in Dart / Flutter</li>
+							<li>Quiz now has content and questions with informational slides</li>
+							<li>Video now places in discrete clips</li>
+							<li>Dropped the emotional identification activitiy</li>
+							<li>Grounding activities shifted to xylophone game</li>
+							<li>Virtual pet informed using acknowledgement (monotonic winning)</li>
 						</ul>
 					</aside>
 				</section>
@@ -731,6 +679,64 @@
 						</ul>
 					</aside>
 				</section>
+				<section>
+					<h3>Participants</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Age</th>
+								<th>Gender</th>
+								<th>Disability</th>
+								<th>Had Control</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>P1</td>
+								<td>34</td>
+								<td>M</td>
+								<td>ASD</td>
+								<td><i class="material-icons">close</i></td>
+							</tr>
+							<tr>
+								<td>P2</td>
+								<td>46</td>
+								<td>F</td>
+								<td>IDD - Hearing Loss</td>
+								<td><i class="material-icons">check</i> <i class="material-icons">close</i> </td>
+							</tr>
+							<tr>
+								<td>P3</td>
+								<td>29</td>
+								<td>M</td>
+								<td>Seizure Disored, ASD</td>
+								<td><i class="material-icons">check</i></td>
+							</tr>
+							<tr>
+								<td>P4</td>
+								<td>43</td>
+								<td>M</td>
+								<td>Acquired Brain Injury - IDD</td>
+								<td><i class="material-icons">check</i></td>
+							</tr>
+							<tr>
+								<td>P5</td>
+								<td>27</td>
+								<td>M</td>
+								<td>William Syndrome, PTSD, Chronic Anxiety</td>
+								<td><i class="material-icons">close</i></td>
+							</tr>
+							<tr>
+								<td>P6</td>
+								<td>N/P</td>
+								<td>M</td>
+								<td>N/P</td>
+								<td><i class="material-icons">check</i></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
 				<section data-auto-animate>
 					<h3>Procedure</h3>
 				</section>
@@ -745,6 +751,7 @@
 							<li class="fragment">One hour per session</li>
 							<li class="fragment">Recorded in its entirety + researcher notes</li>
 						</ul>
+
 					</div>
 					<aside class="notes">
 						The procedure was as follows
@@ -857,11 +864,16 @@
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Results: Grounding Activities</h3>
-					<div class="r-stretch">
-						<ul>
-							<li>Extremely important</li>
-							<li class="fragment">Xylophone as an option</li>
-						</ul>
+					<div class="flex r-stretch">
+						<div class="col">
+							<img src="assets/screenshots/05-music.png" alt="">
+						</div>
+						<div class="col">
+							<ul>
+								<li>Extremely important</li>
+								<li class="fragment">Xylophone as an option</li>
+							</ul>
+						</div>
 					</div>
 				</section>
 				<section data-auto-animate>
@@ -936,6 +948,154 @@
 							<li class="fragment">two</li>
 						</ul>
 					</div>
+				</section>
+			</section>
+
+			<!-- ETC. -->
+			<section data-visibility="uncounted">
+				<section data-visibility="uncounted">
+					Etcetera
+				</section>
+				<section data-visibility="uncounted">
+					<h3>Emotional Reinforcement</h3>
+					<div class="r-stretch flex">
+						<div class="col">
+							<video loop controls>
+								<source data-src="assets/html/vp.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="col">
+							<ul>
+								<li>Virtual pet</li>
+								<li class="fragment">Happiness increases with training</li>
+								<li class="fragment">Happiness decays over time</li>
+								<li class="fragment">Maintaining happiness</li>
+								<li class="fragment">Intrinsic motivation</li>
+							</ul>
+						</div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li>Users were provided a virtual pet</li>
+							<li>Their pet becomes happier as the user completes trainings</li>
+							<li>Happiness decays as a function of time, so if a user does not complete a training, their
+								pet becomes sad</li>
+							<li>The question here was whether this virtual pet could act as a form of emotional
+								reinforcement to engage users and motivate them to return to the application</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-auto-animate data-visibility="uncounted">
+					<h3>Grounding Activities</h3>
+					<div class="r-stretch flex">
+						<div class="col">
+							<video loop controls>
+								<source data-src="assets/html/gg.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="col">
+							<ul>
+								<li>Programmatic breaks</li>
+								<li class="fragment">Extremely difficult content</li>
+								<li class="fragment">Emotionally triggering</li>
+								<li class="fragment">First-hand experience</li>
+							</ul>
+						</div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li>This prototype proposed building in programmatic breaks throughout the application</li>
+							<li>this would provide users with an opportunity to ground themselves</li>
+							<li>the content in the application can be extremely challenging for some people</li>
+							<li>and, may even risk triggering certain individuals</li>
+							<li>Especially those with first hand experience</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-auto-animate data-visibility="uncounted">
+					<h3>Interactive Elements</h3>
+					<div class="r-stretch flex">
+						<div class="col">
+							<video loop controls>
+								<source data-src="assets/html/fg.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="col">
+							<ul>
+								<li>Constant interaction</li>
+								<li class="fragment">Increased engagement</li>
+								<li class="fragment">Flagging abuse / not abuse</li>
+							</ul>
+						</div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li>Exploring the impact of constant interaction</li>
+							<li>hopes that this would increase engagement</li>
+							<li>Modeled after the a&a training exercise involving flagging behavior</li>
+							<li>Users watch a video and mark it as abuse / not abuse</li>
+							<li>After the video, if they succesfully identified the abusive segment, they were asked
+								what type of abuse</li>
+							<li>If they failed to select the proper segment, they were offered redemption, then brought
+								to slides if they answered incorrectly</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-auto-animate data-visibility="uncounted">
+					<h3>Quizzes</h3>
+					<div class="r-stretch flex">
+						<div class="col">
+							<video loop controls>
+								<source data-src="assets/html/qz.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="col">
+							<ul>
+								<li>Presented a traditional quiz</li>
+								<li class="fragment">Prompting users to think</li>
+								<li class="fragment">Only quizzes</li>
+							</ul>
+						</div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li>This prototype explored the effectiveness of presenting a quiz to users</li>
+							<li>the goal was to get users to reflect on their knowledge</li>
+							<li>Similar to most other quiz applications, presented a multiple-choice question</li>
+							<li>This prototype explored providing <em>only</em> quizzes</li>
+						</ul>
+					</aside>
+				</section>
+				<section data-auto-animate data-visibility="uncounted">
+					<h3>Skills Activities</h3>
+					<div class="r-stretch flex">
+						<div class="col">
+							<video loop controls>
+								<source data-src="assets/html/ss.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="col">
+							<ul>
+								<li>Tangential skills</li>
+								<li class="fragment">Variety of activities</li>
+								<li class="fragment">No Touch Zones: Sexual Abuse</li>
+								<li class="fragment">Money Counting: Financial Abuse</li>
+								<li class="fragment">Identifying Emotions: More General</li>
+							</ul>
+						</div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li>This prototype asked a different question than the previous four</li>
+							<li>Would it be effective to just teach tangential skills?</li>
+							<li>It offered several different activities</li>
+							<li>No touch zones focused on sexual abuse by asking users to identify the no-touch zones on
+								a human figure</li>
+							<li>Money counting asked users to make change up to a specified amount using US
+								denominations</li>
+							<li>Identifying emotions asked users to identify emotions presented on screen</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
