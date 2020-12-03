@@ -14,6 +14,7 @@
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous"> -->
 </head>
@@ -54,6 +55,11 @@
 	.mb-0 {
 		margin-bottom: 0 !important;
 	}
+
+	.footnotes {
+		font-size: 0.5em;
+		color: grey;
+	}
 </style>
 
 <body>
@@ -70,7 +76,7 @@
 				</div>
 				<div class="flex">
 					<div class="col">
-						<img style="float: left;" src="assets/etc/uri.png" alt="" height="200">
+						<img style="float: left;" data-src="assets/etc/uri.png" alt="" height="200">
 					</div>
 					<div class="col">
 						<p class="text-right">
@@ -128,15 +134,26 @@
 								Regarding individuals with I/DD
 							</p>
 							<ul>
-								<li>9/10 abused at least once</li>
-								<li class="fragment">50% experience 10+ instances</li>
-								<li class="fragment">Often abused by known persons</li>
-								<li class="fragment">Abuse is severely under reported</li>
+								<li>9/10 abused at least once <sup class="footnotes">1</sup></li>
+								<li class="fragment">50% experience 10+ instances <sup class="footnotes">1</sup></li>
+								<li class="fragment">Often abused by known persons <sup class="footnotes">2</sup></li>
+								<li class="fragment">Abuse is severely under reported <sup class="footnotes">1</sup>
+								</li>
+								<li class="fragment">Trouble recognizing abuse <sup class="footnotes">2</sup></li>
+								<li class="fragment">How can we increase reporting?</li>
 							</ul>
 						</div>
 						<div class="col">
 							<canvas id="intro:abuse:pie" height=800 width=700></canvas>
 						</div>
+					</div>
+					<div class="footnotes">
+						[1] D. Valenti-Hein and L. Schwartz, The Sexual Abuse Interview for Those with Developmental
+						Disabilities. James Stanfield Company, 1995
+						<br>
+						[2] K. Venkatasubramanian et. al, “Exploringabuse reporting for people with intellectual and
+						developmental disabilities,” in ACM CHI Conference on Human Factors in Computing Systems (In
+						Review), 2021.
 					</div>
 					<aside class="notes">
 						<ul>
@@ -145,6 +162,8 @@
 							<li>Known persons: care takers, family, friends</li>
 							<li>Under Reported: For example, Valenti & Hein found that only 3% of sexual abuse cases
 								involving individuals with I/DD are ever reported</li>
+							<li>Trouble recognizing abuse: they may not know they have been abused</li>
+							<li>How can people report abuse if they don't know it has happened?</li>
 							<li>Faced with such a problem, what can we do?</li>
 						</ul>
 					</aside>
@@ -160,22 +179,32 @@
 						</div>
 						<div class="col">
 							<ul>
-								<li>Abuse prevention training is effective</li>
-								<li class="fragment">Shown to increase confidence</li>
+								<li class="fragment">If you don't know, how can you report?</li>
+								<li class="fragment">Abuse prevention training is effective <sup
+										class="footnotes">1</sup></li>
+								<li class="fragment">Shown to increase confidence <sup class="footnotes">1</sup></li>
 								<li class="fragment">Awareness and Action training</li>
-								<li class="fragment">Logistics of attending in-person training</li>
-								<li class="fragment">Frequency is important to continued understanding</li>
 							</ul>
 						</div>
+					</div>
+					<div class="footnotes">
+						[1] K. Venkatasubramanian et. al, “Exploringabuse reporting for people with intellectual and
+						developmental disabilities,” in ACM CHI Conference on Human Factors in Computing Systems (In
+						Review), 2021.
+						<br>
+						[2] K. Ayres and D. Cihak, “Computer- and video-based instruction of food-preparation skills:
+						Acquisition, generalization, and maintenance,” vol. 48,6 no. 3
+						<br>
+						[3] E. Buehler et. al, “Accessibility barriers to online education
+						for young adults with intellectual disabilities,” in Proceedings of the 13th Web for All
+						Conference, ser. W4A ’16. ACM
 					</div>
 					<aside class="notes">
 						<ul>
 							<li>Abuse prevention training has been shown to be effective in Krishna's work</li>
 							<li>Current solution: Awareness and Action in-person training events</li>
-							<li>In person trainings can be hard logistically to attend</li>
-							<li>Persons with I/DD may need help with transportation</li>
-							<li>Frequency has been shown to be very important in retaining information (Ayres, Buehler)
-							</li>
+							<li>We must empower individuals to self-report</li>
+							<li>Knowing about abuse can empower someone to report it</li>
 						</ul>
 					</aside>
 				</section>
@@ -184,12 +213,30 @@
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Awareness and Action (A&A) Training</h3>
-					<div class="r-stretch">
-						<ul>
-							<li>Conducted by self advocates</li>
-							<li class="fragment">For individuals with I/DD</li>
-						</ul>
+					<div class="flex r-stretch">
+						<div class="col">
+							<img data-src="assets/etc/a&a-001.png" alt="">
+						</div>
+						<div class="col">
+							<ul>
+								<li>Conducted by self advocates</li>
+								<li class="fragment">For individuals with I/DD</li>
+								<li class="fragment">By individuals with I/DD</li>
+								<li class="fragment">Frequency is important to continued understanding <sup
+										class="footnotes">2</sup></li>
+								<li class="fragment">Logistics of attending in-person training</li>
+								<li class="fragment">Taking home the training?</li>
+							</ul>
+						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>In person trainings can be hard logistically to attend</li>
+							<li>Persons with I/DD may need help with transportation</li>
+							<li>Frequency has been shown to be very important in retaining information (Ayres, Buehler)
+							</li>
+						</ul>
+					</aside>
 					<!-- TODO: Add image from A&A training -->
 				</section>
 				<section data-auto-animate>
@@ -201,7 +248,7 @@
 						<div class="col">
 							<ul>
 								<li>Autonomous learning</li>
-								<li class="fragment">Refreshing knowledge vs teaching</li>
+								<li class="fragment">Refreshing A&A content vs teaching it</li>
 								<li class="fragment">Emotionally Difficult Material</li>
 								<li class="fragment">Intrinsic Motivation</li>
 							</ul>
@@ -228,17 +275,21 @@
 					<h3>Key Questions</h3>
 					<ul>
 						<li>
-							What aspects of interactive content inspired by ideas of gamification work for the refresher
-							application?
+							Can we apply elements of gamification to the application?
 						</li>
 						<li>
-							How are grounding activities built into the application received by the audience?
+							Can we prevent individuals from becoming triggered?
 						</li>
 						<li>
-							Can an application effectively refresh an individual's knowledge from the Awareness
-							and Action training?
+							Can an application effectively <sup class="footnotes">1</sup> refresh knowledge from the A&A
+							training?
 						</li>
 					</ul>
+					<div class="r-stretch"></div>
+					<div class="footnotes">
+						[1] Within this work "effectiveness" is measured by users willingness to use the application
+						regularly and recommend others do the same.
+					</div>
 				</section>
 				<section data-auto-animate>
 					<h3>Related Works</h3>
@@ -274,18 +325,25 @@
 					<h3>Gathering Requirements</h3>
 					<div class="flex r-stretch">
 						<div class="col r-stack">
-							<img class="fragment" src="assets/requirements/01-persona-alex.png" alt="">
-							<img class="fragment" src="assets/requirements/01-persona-dave.png" alt="">
-							<img class="fragment" src="assets/requirements/01-persona-jessica.png" alt="">
+							<img class="fragment" data-src="assets/requirements/01-persona-alex.png" alt="">
+							<img class="fragment" data-src="assets/requirements/01-persona-dave.png" alt="">
+							<img class="fragment" data-src="assets/requirements/01-persona-jessica.png" alt="">
 						</div>
 						<div class="col">
 							<ul>
-								<li>Generating Personas</li>
-								<li class="fragment">Writing scenarios</li>
-								<li class="fragment">Producing use-cases</li>
-								<li class="fragment">Creating requirements</li>
+								<li>Generating Personas <sup class="footnotes">1</sup></li>
+								<li class="fragment">Writing scenarios <sup class="footnotes">2</sup></li>
+								<li class="fragment">Producing use-cases <sup class="footnotes">2</sup></li>
+								<li class="fragment">Creating requirements <sup class="footnotes">2</sup></li>
 								<li class="fragment">Developing prototypes</li>
 							</ul>
+							<div class="footnotes" style="position: absolute; bottom: 20px;">
+								[1] A. Cooper,The Inmates Are Running the Asylum, C. Hall, Ed. Boger, Paul,1999.
+								<br>
+								[2] H. Sharp, Interaction Design: Beyond Human-Computer Interaction, Fifth Edition.
+								Wiley and
+								Sons Canada, Limited, John, 2019
+							</div>
 						</div>
 					</div>
 					<aside class="notes">
@@ -368,25 +426,25 @@
 					</aside>
 				</section>
 				<section data-auto-animate>
-					<h3>Low-Fidelity Prototypes</h3>
+					<h3>Medium-Fidelity Prototypes</h3>
 				</section>
 				<section data-auto-animate>
-					<h3>Low-Fidelity Prototypes</h3>
+					<h3>Medium-Fidelity Prototypes</h3>
 					<div class="flex">
 						<div class="col">
-							<img class="mb-0" src="assets/html/vp06-happy.png" alt="">
+							<img class="mb-0" data-src="assets/html/vp06-happy.png" alt="">
 							<span class="fragment fade-in-then-semi-out">
 								Emotional Reinforcement
 							</span>
 						</div>
 						<div class="col">
-							<img class="mb-0" src="assets/html/gg04-boxes.png" alt="">
+							<img class="mb-0" data-src="assets/html/gg04-boxes.png" alt="">
 							<span class="fragment fade-in-then-semi-out">
 								Grounding Activities
 							</span>
 						</div>
 						<div class="col">
-							<img class="mb-0" src="assets/html/qz03-kissing.png" alt="">
+							<img class="mb-0" data-src="assets/html/qz03-kissing.png" alt="">
 							<span class="fragment fade-in-then-semi-out">
 								Quizzes
 							</span>
@@ -395,13 +453,13 @@
 					<div class="flex">
 						<div class="col"></div>
 						<div class="col" style="flex: 2;">
-							<img class="mb-0" src="assets/html/fg02-video.png" alt="">
+							<img class="mb-0" data-src="assets/html/fg02-video.png" alt="">
 							<span class="fragment fade-in-then-semi-out">
 								Interactive Elements
 							</span>
 						</div>
 						<div class="col" style="flex: 2;">
-							<img class="mb-0" src="assets/html/ss03-money.png" alt="">
+							<img class="mb-0" data-src="assets/html/ss03-money.png" alt="">
 							<span class="fragment fade-in-then-semi-out">
 								Skills Activities
 							</span>
@@ -449,7 +507,7 @@
 						</blockquote>
 						<div class="flex">
 							<div class="col">
-								<img src="assets/html/vp06-happy.png" alt="">
+								<img data-src="assets/html/vp06-happy.png" alt="">
 							</div>
 							<div class="col">
 								<ul>
@@ -473,7 +531,10 @@
 					<h3>Feedback: Grounding Activities</h3>
 					<div class="r-stretch">
 						<blockquote class="fragment">
-							"it can be a little hard for people [to go through the training]" - C1
+							C1: "I wanted to put some grounding games in, because that will-" <br>
+							C2: "That'll keep people more engaged" <br>
+							C1: "The training can be a little hard for people" <br>
+							C2: "This is a tough subject." <br>
 						</blockquote>
 						<div class="flex">
 							<div class="col">
@@ -485,8 +546,7 @@
 								</ul>
 							</div>
 							<div class="col">
-								<!-- TODO: Change all src to data-src -->
-								<img src="assets/html/gg04-boxes.png" alt="">
+								<img data-src="assets/html/gg04-boxes.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -505,9 +565,12 @@
 						<blockquote class="fragment">
 							"Can you see the smoke coming out of my ears yet?" - C5
 						</blockquote>
+						<blockquote class="fragment">
+							"I like the concept, I like the idea and everything like that" - C4
+						</blockquote>
 						<div class="flex">
 							<div class="col">
-								<img src="assets/html/fg02-video.png" alt="">
+								<img data-src="assets/html/fg02-video.png" alt="">
 							</div>
 							<div class="col">
 								<ul>
@@ -545,7 +608,7 @@
 								</ul>
 							</div>
 							<div class="col">
-								<img src="assets/html/qz03-kissing.png" alt="">
+								<img data-src="assets/html/qz03-kissing.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -564,11 +627,12 @@
 					<h3>Feedback: Skills Activities</h3>
 					<div class="r-stretch">
 						<blockquote class="fragment">
-							"TODO" - C
+							"I have incidents of people borrowing money, or taking it and, 'here I paid you back' and
+							it's, you know, someone takes a dollar for twenty." - C5
 						</blockquote>
 						<div class="flex">
 							<div class="col">
-								<img src="assets/html/ss03-money.png" alt="">
+								<img data-src="assets/html/ss03-money.png" alt="">
 							</div>
 							<div class="col">
 								<ul>
@@ -597,33 +661,35 @@
 					</aside>
 				</section>
 				<section>
-					<h3>Medium-Fidelity Prototypes</h3>
+					<h3>High-Fidelity Prototypes</h3>
 					<div class="flex">
 						<div class="col">
-							<img class="mb-0 fragment" src="assets/screenshots/a/02-slide.png" alt="">
+							<img class="mb-0 fragment" data-src="assets/screenshots/a/02-slide.png" alt="">
 							Version A
 						</div>
 						<div class="col">
-							<img class="mb-0 fragment" src="assets/screenshots/b/04-video-clip1-no-abuse.png" alt="">
-							Verson B
+							<img class="mb-0 fragment" data-src="assets/screenshots/b/04-video-clip1-no-abuse.png"
+								alt="">
+							Version B
 						</div>
 						<div class="col">
-							<img class="mb-0 fragment" src="assets/screenshots/c/06-skills-01.png" alt="">
+							<img class="mb-0 fragment" data-src="assets/screenshots/c/06-skills-01.png" alt="">
 							Version C
 						</div>
 						<div class="col">
-							<img src="assets/screenshots/05-music.png" alt="Xylophone game" class="mb-0 fragment">
+							<img data-src="assets/screenshots/05-music.png" alt="Xylophone game" class="mb-0 fragment">
 							Grounding Activity
 						</div>
 						<div class="col">
-							<img src="assets/screenshots/07-reward.png" alt="Acknowledgement" class="mb-0 fragment">
+							<img data-src="assets/screenshots/07-reward.png" alt="Acknowledgement"
+								class="mb-0 fragment">
 							Reward
 						</div>
 					</div>
 					<aside class="notes">
 						<ul>
 							<li>Incorporated feedback from designers</li>
-							<li>Created Medium fidelity</li>
+							<li>Created high fidelity</li>
 							<li>Written in Dart / Flutter</li>
 							<li>Quiz now has content and questions with informational slides</li>
 							<li>Video now places in discrete clips</li>
@@ -650,10 +716,10 @@
 				</section>
 
 				<section data-auto-animate>
-					<h3>Methodology</h3>
+					<h3>Study Methodology</h3>
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
-					<h3>Methodology</h3>
+					<h3>Study Methodology</h3>
 					<div class="r-stretch">
 						<ul>
 							<li>Remote Synchronous Trials</li>
@@ -681,10 +747,10 @@
 					</aside>
 				</section>
 				<section data-auto-animate>
-					<h3>Participants</h3>
+					<h3>Study Participants</h3>
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
-					<h3>Participants</h3>
+					<h3>Study Participants</h3>
 					<table>
 						<thead>
 							<tr>
@@ -749,10 +815,10 @@
 					</table>
 				</section>
 				<section data-auto-animate>
-					<h3>Procedure</h3>
+					<h3>Study Procedure</h3>
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
-					<h3>Procedure</h3>
+					<h3>Study Procedure</h3>
 					<div class="r-stretch">
 						<ul>
 							<li>One participant per session</li>
@@ -776,6 +842,7 @@
 							<li>These sessions typically lasted about one hour</li>
 							<li>And, were recorded in their entirety. Researchers also took notes during these sessions
 							</li>
+							<li>Version order was counterbalanced</li>
 						</u>
 					</aside>
 				</section>
@@ -861,13 +928,24 @@
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Results: Impact of Interaction</h3>
-					<div class="r-stretch">
-						<ul>
-							<li>Video quizzes were engaging</li>
-							<li class="fragment">Skills Activities were informative</li>
-							<li class="fragment">Lack of engagement with Slides</li>
-							<li class="fragment">Acknowledgement via Emojis</li>
-						</ul>
+					<div>
+						<blockquote>"The skills game make[s] it easier to identify what is." - P5</blockquote>
+					</div>
+					<div class="flex r-stretch">
+						<div class="col">
+							<img src="assets/screenshots/b/04-video-clip1-no-abuse.png" alt="">
+						</div>
+						<div class="col">
+							<img src="assets/screenshots/c/06-skills-01.png" alt="">
+						</div>
+						<div class="col">
+							<ul>
+								<li>Video quizzes were engaging</li>
+								<li class="fragment">Skills Activities were informative</li>
+								<li class="fragment">Lack of engagement with Slides</li>
+								<li class="fragment">Acknowledgement via Emojis</li>
+							</ul>
+						</div>
 					</div>
 				</section>
 				<section data-auto-animate>
@@ -875,14 +953,18 @@
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Results: Grounding Activities</h3>
+					<div>
+						<blockquote>Where is there to go? Where is there to feel safe if you're technically supposed to
+							already be in the safe spot?" - P5</blockquote>
+					</div>
 					<div class="flex r-stretch">
 						<div class="col">
-							<img src="assets/screenshots/05-music.png" alt="">
+							<img data-src="assets/screenshots/05-music.png" alt="">
 						</div>
 						<div class="col">
 							<ul>
 								<li>Extremely important</li>
-								<li class="fragment">Xylophone as an option</li>
+								<li class="fragment">Xylophone has potential (5/6)</li>
 							</ul>
 						</div>
 					</div>
@@ -893,9 +975,14 @@
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Results: Effectiveness</h3>
 					<div class="r-stretch">
+						<blockquote>"if you do it less, then you're not gaining the strength to tell somebody, if you
+							use it more then you're gonna be like okay, now I know I really need to say something.
+							Cause' a lot of people just shut down, they get shocked, they don't know what to say, they
+							don't know what to do, and I think that if it was more that it would definitely be a better
+							thing to have." - P4</blockquote>
 						<ul>
-							<li>Recommending others use the application</li>
-							<li class="fragment">Willingness to download</li>
+							<li>Recommending others download and use the final application</li>
+							<li class="fragment">Willingness to download and use</li>
 						</ul>
 					</div>
 				</section>
@@ -912,8 +999,8 @@
 					<h3>Recommendations for Future Applications</h3>
 					<div class="r-stretch">
 						<ul>
-							<li>TODO</li>
-							<li class="fragment">two</li>
+							<li>Combine the three presented prototypes</li>
+							<li class="fragment">Slides, Grounding, Video/Skills, Reward</li>
 						</ul>
 					</div>
 				</section>
@@ -924,8 +1011,9 @@
 					<h3>Reporting Abuse</h3>
 					<div class="r-stretch">
 						<ul>
-							<li>TODO</li>
-							<li class="fragment">two</li>
+							<li>Brought up during usability evaluation</li>
+							<li class="fragment">Showing people what happened</li>
+							<li class="fragment">Calling DPPC using the buttons</li>
 						</ul>
 					</div>
 				</section>
@@ -936,8 +1024,9 @@
 					<h3>Limitations</h3>
 					<div class="r-stretch">
 						<ul>
-							<li>TODO</li>
-							<li class="fragment">two</li>
+							<li>Accessibility was not in scope</li>
+							<li class="fragment">Population bias</li>
+							<li class="fragment">User device control</li>
 						</ul>
 					</div>
 				</section>
@@ -955,8 +1044,9 @@
 					<h3>Conclusions</h3>
 					<div class="r-stretch">
 						<ul>
-							<li>TODO</li>
-							<li class="fragment">two</li>
+							<li>An effective application can be made.</li>
+							<li class="fragment">Remote synchronous evaluations are viable</li>
+							<li class="fragment">Individuals with I/DD need an application like the one presented here</li>
 						</ul>
 					</div>
 				</section>
@@ -967,8 +1057,9 @@
 					<h3>Future Works: Large Scale Evaluations</h3>
 					<div class="r-stretch">
 						<ul>
-							<li>TODO</li>
-							<li class="fragment">two</li>
+							<li>Focus on accessibility</li>
+							<li class="fragment">Large sample size</li>
+							<li class="fragment">Remote asynchronous</li>
 						</ul>
 					</div>
 				</section>
