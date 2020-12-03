@@ -13,6 +13,8 @@
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous"> -->
 </head>
 <style>
@@ -58,11 +60,18 @@
 				</h1>
 				<div class="r-stretch">
 				</div>
-				<p class="text-right">
-					Thomas Howard <br>
-					University of Rhode Island <br>
-					Krishna Venkatasubramanian
-				</p>
+				<div class="flex">
+					<div class="col">
+						<img style="float: left;" src="assets/etc/uri.png" alt="" height="200">
+					</div>
+					<div class="col">
+						<p class="text-right">
+							Thomas Howard <br>
+							University of Rhode Island <br>
+							Krishna Venkatasubramanian, <br> Noah Daniels, William Kinnersley
+						</p>
+					</div>
+				</div>
 				<aside class="notes">
 					<ul>
 						<li>Say hello</li>
@@ -72,12 +81,12 @@
 				</aside>
 			</section>
 			<section>
-				<h2>Table of Contents</h2>
+				<h2>Outline</h2>
 				<div>
 					<ol>
 						<li>Introduction</li>
-						<li class="fragment">Study 1: Collaborative Design</li>
-						<li class="fragment">Study 2: Usability Evaluations</li>
+						<li class="fragment">Collaborative Design</li>
+						<li class="fragment">Usability Evaluation Study</li>
 						<li class="fragment">Discussion</li>
 						<li class="fragment">Conclusions & Future Works</li>
 					</ol>
@@ -99,24 +108,6 @@
 			<section>
 				<section>
 					<h2>Introduction</h2>
-				</section>
-				<section>
-					<h3>Overview</h3>
-					<div>
-						<ol>
-							<li>The Problem: Abuse</li>
-							<li class="fragment">Proposed Solution: Education</li>
-							<li class="fragment">Key Questions</li>
-						</ol>
-					</div>
-					<aside class="notes">
-						More specifically, within this section I will elaborate on
-						<ul>
-							<li>the problem we face, the case of rampant abuse in a vulnerable community.</li>
-							<li>propose education as a solution to this problem.</li>
-							<li>establish several key questions that guided this research</li>
-						</ul>
-					</aside>
 				</section>
 				<section data-auto-animate>
 					<h3>Abuse is a Problem</h3>
@@ -163,7 +154,7 @@
 							<ul>
 								<li>Abuse prevention training is effective</li>
 								<li class="fragment">Shown to increase confidence</li>
-								<li class="fragment">Current solution: In person training</li>
+								<li class="fragment">Awareness and Action training</li>
 								<li class="fragment">Logistics of attending in-person training</li>
 								<li class="fragment">Frequency is important to continued understanding</li>
 							</ul>
@@ -179,6 +170,19 @@
 							</li>
 						</ul>
 					</aside>
+				</section>
+				<section data-auto-animate>
+					<h3>Awareness and Action (A&A) Training</h3>
+				</section>
+				<section data-auto-animate data-visibility="uncounted">
+					<h3>Awareness and Action (A&A) Training</h3>
+					<div class="r-stretch">
+						<ul>
+							<li>Conducted by self advocates</li>
+							<li class="fragment">For individuals with I/DD</li>
+						</ul>
+					</div>
+					<!-- TODO: Add image from A&A training -->
 				</section>
 				<section data-auto-animate>
 					<h3>Digitizing the A&A training</h3>
@@ -227,6 +231,18 @@
 							and Action training?
 						</li>
 					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Related Works</h3>
+				</section>
+				<section data-auto-animate data-visibility="uncounted">
+					<h3>Related Works</h3>
+					<div class="r-stretch">
+						<ul>
+							<li>Nothing directly related</li>
+							<li class="fragment">Some work in gamification</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 
@@ -302,7 +318,36 @@
 						</ul>
 					</aside>
 				</section>
+				<section data-auto-animate>
+					<h3>The Prototypes</h3>
+				</section>
+				<section data-auto-animate>
+					<h3>The Prototypes</h3>
+					<div class="flex">
+						<div class="col">
+							<img class="" src="assets/html/fg01-video.png" alt="">
+							Interactive Elements
+						</div>
+						<div class="col">
+							<img src="assets/html/gg04-boxes.png" alt="">
+							Grounding Activities
+						</div>
+						<div class="col">
+							<img src="assets/html/qz03-kissing.png" alt="">
 
+						</div>
+					</div>
+					<div class="flex">
+						<div class="col"></div>
+						<div class="col" style="flex: 2;">
+							<img src="assets/html/vp06-happy.png" alt="">
+						</div>
+						<div class="col" style="flex: 2;">
+							<img src="assets/html/ss03-money.png" alt="">
+						</div>
+						<div class="col"></div>
+					</div>
+				</section>
 				<section data-auto-animate>
 					<h3>Emotional Reinforcement</h3>
 				</section>
@@ -357,7 +402,8 @@
 					<aside class="notes">
 						<ul>
 							<li>Overall, this prototype faired quite poorly.</li>
-							<li>Participants expressed concern over the application taking away the happiness of the pet</li>
+							<li>Participants expressed concern over the application taking away the happiness of the pet
+							</li>
 							<li>They stressed that rewards should increase <em>monotonically</em></li>
 						</ul>
 					</aside>
@@ -448,8 +494,10 @@
 							<li>hopes that this would increase engagement</li>
 							<li>Modeled after the a&a training exercise involving flagging behavior</li>
 							<li>Users watch a video and mark it as abuse / not abuse</li>
-							<li>After the video, if they succesfully identified the abusive segment, they were asked what type of abuse</li>
-							<li>If they failed to select the proper segment, they were offered redemption, then brought to slides if they answered incorrectly</li>
+							<li>After the video, if they succesfully identified the abusive segment, they were asked
+								what type of abuse</li>
+							<li>If they failed to select the proper segment, they were offered redemption, then brought
+								to slides if they answered incorrectly</li>
 						</ul>
 					</aside>
 				</section>
@@ -477,7 +525,8 @@
 						<ul>
 							<li>Designers generally liked this concept</li>
 							<li>Although they found it confusing and overly complicated in its current incarnation</li>
-							<li>Instead of continuously playing the video, they suggested using discrete clips and asking after each</li>
+							<li>Instead of continuously playing the video, they suggested using discrete clips and
+								asking after each</li>
 						</ul>
 					</aside>
 				</section>
@@ -536,7 +585,8 @@
 							<li>Designers thought it would benefit users</li>
 							<li>However, it was not enough on it's own</li>
 							<li>Designers stressed that you need to show before you ask questions</li>
-							<li>They also suggested making it optional as it was pointed out that if a user knows a quiz is coming they may feel anxious</li>
+							<li>They also suggested making it optional as it was pointed out that if a user knows a quiz
+								is coming they may feel anxious</li>
 						</ul>
 					</aside>
 				</section>
@@ -567,8 +617,10 @@
 							<li>This prototype asked a different question than the previous four</li>
 							<li>Would it be effective to just teach tangential skills?</li>
 							<li>It offered several different activities</li>
-							<li>No touch zones focused on sexual abuse by asking users to identify the no-touch zones on a human figure</li>
-							<li>Money counting asked users to make change up to a specified amount using US denominations</li>
+							<li>No touch zones focused on sexual abuse by asking users to identify the no-touch zones on
+								a human figure</li>
+							<li>Money counting asked users to make change up to a specified amount using US
+								denominations</li>
 							<li>Identifying emotions asked users to identify emotions presented on screen</li>
 						</ul>
 					</aside>
@@ -593,11 +645,42 @@
 					<aside class="notes">
 						<ul>
 							<li>This prototype had mixed reviews, but was generally viewed positively.</li>
-							<li>Participants believed that both no touch zones and money counting would be effective</li>
-							<li>For no touch zones, participants suggested the application offer a positive reinforcer when the user makes a correct suggestion</li>
-							<li>For money counting, no suggestions were made, participants wanted to use the activity as-is</li>
-							<li>Fortunately, designers were able to demonstrate a fatal flaw in the identifying-emotions activity</li>
-							<li>This activity was found to be extremely challenging for designers, as the angry emotion seemed to be jarring</li>
+							<li>Participants believed that both no touch zones and money counting would be effective
+							</li>
+							<li>For no touch zones, participants suggested the application offer a positive reinforcer
+								when the user makes a correct suggestion</li>
+							<li>For money counting, no suggestions were made, participants wanted to use the activity
+								as-is</li>
+							<li>Fortunately, designers were able to demonstrate a fatal flaw in the identifying-emotions
+								activity</li>
+							<li>This activity was found to be extremely challenging for designers, as the angry emotion
+								seemed to be jarring</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h3>The resulting prototypes</h3>
+					<div class="flex r-stretch">
+						<div class="col">
+							<img class="fragment" src="assets/screenshots/a/08-quiz.png" alt="">
+						</div>
+						<div class="col">
+							<img class="fragment" src="assets/screenshots/b/04-video-clip1-no-abuse.png" alt="">
+						</div>
+						<div class="col">
+							<img class="fragment" src="assets/screenshots/c/06-skills-01.png" alt="">
+						</div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li>After concluding the collaborative design session</li>
+							<li>We had a lot of great feedback</li>
+							<li>This feedback was used to pair down our prototypes and create 3 new medium-fidelity
+								versions</li>
+							<li>These versions all combined informal and quizzing elements</li>
+							<li>Version A focused providing a simple quiz</li>
+							<li>Version B used discrete video clips</li>
+							<li>Version C used the no-touch zone skills game</li>
 						</ul>
 					</aside>
 				</section>
@@ -609,7 +692,14 @@
 					<h2>
 						Usability Evaluations
 					</h2>
+					<aside class="notes">
+						<ul>
+							<li>After completing the collaborative design session</li>
+							<li>usability evaluations were used to validate our work</li>
+						</ul>
+					</aside>
 				</section>
+
 				<section data-auto-animate>
 					<h3>Methodology</h3>
 				</section>
@@ -617,7 +707,7 @@
 					<h3>Methodology</h3>
 					<div class="r-stretch">
 						<ul>
-							<li>Remote Synchronous Trial</li>
+							<li>Remote Synchronous Trials</li>
 							<li class="fragment">Six participants with I/DD</li>
 							<li class="fragment">Zoom Video Call</li>
 							<li class="fragment">Shared virtual emulator</li>
@@ -625,6 +715,21 @@
 							<li class="fragment">Interview Questions + Verbal Feedback</li>
 						</ul>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>We conducted these evaluations using remote synchronous trials</li>
+							<li>With the help of Mass Advocates Standing Strong we recruited six individuals with I/DD
+								to participate</li>
+							<li>Evaluations were completed via zoom video calls</li>
+							<li>These sessions were bring-your-own-device, users logged in on whatever device they felt
+								comfortable with</li>
+							<li>After logging in, we would share a virtual emulator running the application with them
+							</li>
+							<li>and try to cede control, which worked if they were on a desktop computer</li>
+							<li>To evaluate the application, interview questions were asked periodically and
+								participants were asked to vocalize as much as they could</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<h3>Procedure</h3>
@@ -634,12 +739,27 @@
 					<div class="r-stretch">
 						<ul>
 							<li>One participant per session</li>
-							<li class="fragment">One hour per session</li>
 							<li class="fragment">Participant completes a lesson</li>
 							<li class="fragment">Interview questions</li>
 							<li class="fragment">After all versions, final interview questions</li>
+							<li class="fragment">One hour per session</li>
+							<li class="fragment">Recorded in its entirety + researcher notes</li>
 						</ul>
 					</div>
+					<aside class="notes">
+						The procedure was as follows
+						<u>
+							<li>A single participant would join a session</li>
+							<li>We would share the emulator with them and attempt to handoff control</li>
+							<li>Participants would complete one of the three presented prototypes</li>
+							<li>After completing a lesson, they would answer a series of interview questions</li>
+							<li>After completing all three versions, a round of final interview questions were
+								administered</li>
+							<li>These sessions typically lasted about one hour</li>
+							<li>And, were recorded in their entirety. Researchers also took notes during these sessions
+							</li>
+						</u>
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<h3>Data Analysis</h3>
@@ -648,10 +768,19 @@
 					<h3>Data Analysis</h3>
 					<div class="r-stretch">
 						<ul>
-							<li>Thematic analysis over all videos</li>
+							<li>Thematic analysis over all session</li>
 							<li class="fragment">Iteratively developed code</li>
 						</ul>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>Once all of the sessions had concluded and transcripts were finalized, iterative
+								thematic analysis was carried out</li>
+							<li>The code developed leaned heavily on answers to interview questions</li>
+							<li>But, some non-verbal cues were noted, such as when participants got stuck or answered a
+								quiz question incorrectly</li>
+						</ul>
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<h3>Results: Participants Favorites</h3>
@@ -819,6 +948,10 @@
 	<script src="plugin/zoom/zoom.js"></script>
 	<script>
 		Reveal.initialize({
+			fragments: false,
+			autoAnimate: false,
+			navigationMode: 'linear',
+			transition: 'none',
 			hash: true,
 			slideNumber: 'c/t',
 			width: 960 * 1.5,
