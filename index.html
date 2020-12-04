@@ -32,6 +32,10 @@
 		font-size: 1em !important;
 	}
 
+	sup {
+		top: 0 !important;
+	}
+
 	.flex {
 		display: flex;
 	}
@@ -76,7 +80,8 @@
 				</div>
 				<div class="flex">
 					<div class="col">
-						<img style="float: left;" data-src="assets/etc/uri.png" alt="" height="200">
+						<img class="object-contain h-48" style="float: left;" data-src="assets/etc/uri.png" alt=""
+							height="19">
 					</div>
 					<div class="col">
 						<p class="text-right">
@@ -151,7 +156,7 @@
 						[1] D. Valenti-Hein and L. Schwartz, The Sexual Abuse Interview for Those with Developmental
 						Disabilities. James Stanfield Company, 1995
 						<br>
-						[2] K. Venkatasubramanian et. al, “Exploringabuse reporting for people with intellectual and
+						[2] K. Venkatasubramanian et. al, “Exploring abuse reporting for people with intellectual and
 						developmental disabilities,” in ACM CHI Conference on Human Factors in Computing Systems (In
 						Review), 2021.
 					</div>
@@ -188,7 +193,7 @@
 						</div>
 					</div>
 					<div class="footnotes">
-						[1] K. Venkatasubramanian et. al, “Exploringabuse reporting for people with intellectual and
+						[1] K. Venkatasubramanian et. al, “Exploring abuse reporting for people with intellectual and
 						developmental disabilities,” in ACM CHI Conference on Human Factors in Computing Systems (In
 						Review), 2021.
 						<br>
@@ -237,7 +242,6 @@
 							</li>
 						</ul>
 					</aside>
-					<!-- TODO: Add image from A&A training -->
 				</section>
 				<section data-auto-animate>
 					<h3>Digitizing the A&A training</h3>
@@ -297,6 +301,7 @@
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Related Works</h3>
 					<div class="r-stretch">
+						TODO
 						<ul>
 							<li>Nothing directly related</li>
 							<li class="fragment">Some work in gamification</li>
@@ -331,6 +336,7 @@
 						</div>
 						<div class="col">
 							<ul>
+								<!-- TODO: Flowchart -->
 								<li>Generating Personas <sup class="footnotes">1</sup></li>
 								<li class="fragment">Writing scenarios <sup class="footnotes">2</sup></li>
 								<li class="fragment">Producing use-cases <sup class="footnotes">2</sup></li>
@@ -637,8 +643,9 @@
 							<div class="col">
 								<ul>
 									<li>Generally positive</li>
-									<li class="fragment">No Touch Zones</li>
+									<!-- consider removing money counting as a bullet point -->
 									<li class="fragment">Money Counting</li>
+									<li class="fragment">No Touch Zones</li>
 									<li class="fragment">Identifying Emotions was challenging</li>
 								</ul>
 							</div>
@@ -693,7 +700,7 @@
 							<li>Written in Dart / Flutter</li>
 							<li>Quiz now has content and questions with informational slides</li>
 							<li>Video now places in discrete clips</li>
-							<li>Dropped the emotional identification activitiy</li>
+							<li>Dropped the emotional identification activity</li>
 							<li>Grounding activities shifted to xylophone game</li>
 							<li>Virtual pet informed using acknowledgement (monotonic winning)</li>
 						</ul>
@@ -720,15 +727,20 @@
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Study Methodology</h3>
-					<div class="r-stretch">
-						<ul>
-							<li>Remote Synchronous Trials</li>
-							<li class="fragment">Six participants with I/DD</li>
-							<li class="fragment">Zoom Video Call</li>
-							<li class="fragment">Shared virtual emulator</li>
-							<li class="fragment">Remote control ceded where possible</li>
-							<li class="fragment">Interview Questions + Verbal Feedback</li>
-						</ul>
+					<div class="flex r-stretch">
+						<div class="col">
+							<img src="assets/etc/screenshot.png" alt="">
+						</div>
+						<div class="col">
+							<ul>
+								<li>Remote Synchronous Trials</li>
+								<li class="fragment">Six participants with I/DD</li>
+								<li class="fragment">Zoom Video Call</li>
+								<li class="fragment">Shared virtual emulator</li>
+								<li class="fragment">Remote control ceded where possible</li>
+								<li class="fragment">Interview Questions + Verbal Feedback</li>
+							</ul>
+						</div>
 					</div>
 					<aside class="notes">
 						<ul>
@@ -783,7 +795,7 @@
 								<td>P3</td>
 								<td>29</td>
 								<td>M</td>
-								<td>Seizure Disored, ASD</td>
+								<td>Seizure Disorder, ASD</td>
 								<td><i class="material-icons">check</i></td>
 								<td><i class="material-icons">check</i></td>
 							</tr>
@@ -848,10 +860,62 @@
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Data Analysis</h3>
 					<div class="r-stretch">
-						<ul>
+						<ul class="" style="margin-bottom: 3em;">
 							<li>Thematic analysis over all session</li>
 							<li class="fragment">Iteratively developed code</li>
 						</ul>
+						<table class="">
+							<thead>
+								<tr>
+									<th>Theme</th>
+									<th>Example</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Positive Reaction</th>
+									<td>"This is good"</td>
+								</tr>
+								<tr>
+									<th>
+										Negative Reaction
+									</th>
+									<td>
+										"This is bad"
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Intervention Required
+									</th>
+									<td>
+										"I need help"
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Incorrect Response
+									</th>
+									<td>
+										"Oops"
+									</td>
+								</tr>
+								<tr>
+									<th>
+										Enhancements
+									</th>
+									<td>
+										"Add feature X"
+									</td>
+								</tr>
+								<tr>
+									<th>A&A Connection</th>
+									<td>
+										"This reminds me of x from A\&A"
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					<aside class="notes">
 						<ul>
@@ -860,6 +924,31 @@
 							<li>The code developed leaned heavily on answers to interview questions</li>
 							<li>But, some non-verbal cues were noted, such as when participants got stuck or answered a
 								quiz question incorrectly</li>
+						</ul>
+						<ul>
+							<li>
+								When a participant exhibits a positive
+								reaction while using or discussing the application.
+							</li>
+							<li>
+								When a participant exhibits a negative
+								reaction while using or discussing the application.
+							</li>
+							<li>
+								When a researcher has to intervene so that the
+								participant can complete a task.
+							</li>
+							<li>
+								When a participant selects an incorrect answer.
+							</li>
+							<li>
+								When a participant suggests an improvement to the application
+								that is not a fix.
+							</li>
+							<li>
+								When a participant connects the application to the in-person
+								training.
+							</li>
 						</ul>
 					</aside>
 				</section>
@@ -917,6 +1006,9 @@
 								</tr>
 							</tbody>
 						</table>
+						<p class="fragment">
+							Version B and C tie with 3 votes each!
+						</p>
 					</div>
 				</section>
 				<section data-auto-animate>
@@ -949,15 +1041,17 @@
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Results: Grounding Activities</h3>
-					<div>
-						<blockquote>Where is there to go? Where is there to feel safe if you're technically supposed to
-							already be in the safe spot?" - P5</blockquote>
-					</div>
 					<div class="flex r-stretch">
-						<div class="col">
+						<div class="flex-initial">
 							<img data-src="assets/screenshots/05-music.png" alt="">
 						</div>
-						<div class="col">
+						<div class="flex-initial">
+							<div>
+								<blockquote style="margin-left: 0 !important;">Where is there to go? Where is there to
+									feel safe if you're technically
+									supposed to
+									already be in the safe spot?" - P5</blockquote>
+							</div>
 							<ul>
 								<li>Extremely important</li>
 								<li class="fragment">Xylophone has potential (5/6)</li>
@@ -971,15 +1065,15 @@
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Results: Effectiveness</h3>
 					<div class="r-stretch">
+						<ul>
+							<li>Recommending others download and use the final application</li>
+							<li class="fragment">Willingness to download and use</li>
+						</ul>
 						<blockquote>"if you do it less, then you're not gaining the strength to tell somebody, if you
 							use it more then you're gonna be like okay, now I know I really need to say something.
 							Cause' a lot of people just shut down, they get shocked, they don't know what to say, they
 							don't know what to do, and I think that if it was more that it would definitely be a better
 							thing to have." - P4</blockquote>
-						<ul>
-							<li>Recommending others download and use the final application</li>
-							<li class="fragment">Willingness to download and use</li>
-						</ul>
 					</div>
 				</section>
 			</section>
@@ -993,24 +1087,43 @@
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Recommendations for Future Applications</h3>
-					<div class="r-stretch">
+					<div class="mb-20">
 						<ul>
-							<li>Combine the three presented prototypes</li>
+							<li class="fragment">Combine the three presented prototypes</li>
 							<li class="fragment">Slides, Grounding, Video/Skills, Reward</li>
 						</ul>
 					</div>
+					<div class="flex r-stretch">
+						<div class="col fragment">
+							<img src="assets/screenshots/a/02-slide.png" alt="">
+						</div>
+						<div class="col fragment">
+							<img src="assets/screenshots/05-music.png" alt="">
+						</div>
+						<div class="col fragment">
+							<img src="assets/screenshots/b/04-video-clip1-no-abuse.png" alt="">
+						</div>
+						<div class="col fragment">
+							<img src="assets/screenshots/07-reward.png" alt="">
+						</div>
+					</div>
 				</section>
 				<section data-auto-animate>
 					<h3>Reporting Abuse</h3>
 				</section>
-				<section data-auto-animate data-visibility="uncounted">
+				<section data-auto-animate>
 					<h3>Reporting Abuse</h3>
-					<div class="r-stretch">
-						<ul>
-							<li>Brought up during usability evaluation</li>
-							<li class="fragment">Showing people what happened</li>
-							<li class="fragment">Calling DPPC using the buttons</li>
-						</ul>
+					<div class="flex r-stretch">
+						<div class="col">
+							<img src="assets/screenshots/03-menu.png" alt="">
+						</div>
+						<div class="col">
+							<ul>
+								<li class="fragment">Brought up during usability evaluation</li>
+								<li class="fragment">Showing people what happened</li>
+								<li class="fragment">Calling DPPC using the buttons</li>
+							</ul>
+						</div>
 					</div>
 				</section>
 				<section data-auto-animate>
@@ -1018,12 +1131,18 @@
 				</section>
 				<section data-auto-animate data-visibility="uncounted">
 					<h3>Limitations</h3>
-					<div class="r-stretch">
-						<ul>
-							<li>Accessibility was not in scope</li>
-							<li class="fragment">Population bias</li>
-							<li class="fragment">User device control</li>
-						</ul>
+					<div class="r-stretch flex">
+						<div class="col">
+							<img src="assets/etc/accessibility.png" alt="">
+						</div>
+						<div class="col">
+
+							<ul>
+								<li>Accessibility was not in scope</li>
+								<li class="fragment">Population bias</li>
+								<li class="fragment">User device control</li>
+							</ul>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -1033,28 +1152,20 @@
 				<section>
 					<h2>Conclusions & Future Work</h2>
 				</section>
-				<section data-auto-animate>
+				<section data-visibility="uncounted">
 					<h3>Conclusions</h3>
-				</section>
-				<section data-auto-animate data-visibility="uncounted">
-					<h3>Conclusions</h3>
-					<div class="r-stretch">
+					<div class="mb-20">
 						<ul>
-							<li>An effective application can be made.</li>
+							<li class="fragment">An effective application can be made.</li>
 							<li class="fragment">Remote synchronous evaluations are viable</li>
 							<li class="fragment">Individuals with I/DD need an application like the one presented here
 							</li>
 						</ul>
 					</div>
-				</section>
-				<section data-auto-animate>
 					<h3>Future Works: Large Scale Evaluations</h3>
-				</section>
-				<section data-auto-animate data-visibility="uncounted">
-					<h3>Future Works: Large Scale Evaluations</h3>
-					<div class="r-stretch">
+					<div class="">
 						<ul>
-							<li>Focus on accessibility</li>
+							<li class="fragment">Focus on accessibility</li>
 							<li class="fragment">Large sample size</li>
 							<li class="fragment">Remote asynchronous</li>
 						</ul>
@@ -1145,7 +1256,7 @@
 							<li>hopes that this would increase engagement</li>
 							<li>Modeled after the a&a training exercise involving flagging behavior</li>
 							<li>Users watch a video and mark it as abuse / not abuse</li>
-							<li>After the video, if they succesfully identified the abusive segment, they were asked
+							<li>After the video, if they successfully identified the abusive segment, they were asked
 								what type of abuse</li>
 							<li>If they failed to select the proper segment, they were offered redemption, then brought
 								to slides if they answered incorrectly</li>
@@ -1219,10 +1330,10 @@
 	<script src="plugin/zoom/zoom.js"></script>
 	<script>
 		Reveal.initialize({
-			fragments: false,
-			autoAnimate: false,
-			navigationMode: 'linear',
-			transition: 'none',
+			// fragments: false,
+			// autoAnimate: false,
+			// navigationMode: 'linear',
+			// transition: 'none',
 			hash: true,
 			slideNumber: 'c/t',
 			width: 960 * 1.5,
